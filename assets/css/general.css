@@ -1,0 +1,248 @@
+
+/* declare font style */
+/* set font face for "futura oblique" font. */
+@FONT-FACE {
+    font-family: "futura-oblique";
+    src: 	url("../fonts/futura-oblique/Futura Oblique.woff") format('woff'), /* Modern Browsers */
+    url("../fonts/futura-oblique/Futura Oblique.ttf") format("truetype"); /* Safari, Android, iOS */
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* set font face for "opensans light" font. */
+@FONT-FACE {
+    font-family: "opensans-light";
+    src: 	url("../fonts/opensans-light/OpenSans-Light.woff") format('woff'), /* Modern Browsers */
+    url("../fonts/opensans-light/OpenSans-Light.ttf") format("truetype"); /* Safari, Android, iOS */
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* set font face for "opensans regular" font. */
+@FONT-FACE {
+    font-family: "opensans-regular";
+    src: 	url("../fonts/opensans-regular/OpenSans.woff") format('woff'),  /*Modern Browsers*/
+    url("../fonts/opensans-regular/OpenSans-Regular.ttf") format("truetype"); /* Safari, Android, iOS */
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* set font face for "opensans semibold" font. */
+@FONT-FACE {
+    font-family: "opensans-semibold";
+    src: 	url("../fonts/opensans-semibold/OpenSans-Semibold.woff") format('woff'), /* Modern Browsers */
+    url("../fonts/opensans-semibold/OpenSans-Semibold.ttf") format("truetype"); /* Safari, Android, iOS */
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* set font face for "futura std medium" font. */
+@FONT-FACE {
+    font-family: "futurastd-medium";
+    src: 	url("../fonts/futurastd-medium/FuturaStd-Medium.woff") format('woff'), /* Modern Browsers */
+    url("../fonts/futurastd-medium/FuturaStd-Medium.ttf") format("truetype"); /* Safari, Android, iOS */
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* area style */
+
+body {
+    font-family: opensans-light, serif;
+}
+
+a{
+    cursor: pointer;
+}
+
+.alert {
+    border: 0;
+
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+
+    padding: 0;
+}
+
+/* kunglaw edit */
+.bg-header-modal{
+	
+	background-color:#3093E4 !important;
+	color:#FFF !important;
+		
+}
+
+.alert-danger {
+    background-image: none;
+    background-color: #ED1C24;
+    color: white;
+}
+
+.alert-danger .sub-alert-danger {
+    margin-left: 30px;
+    background-color: #FE444B;
+    padding: 10px;
+}
+
+.alert-success {
+    background-image: none;
+    background-color: #C3D849;
+    color: white;
+}
+
+.alert-success .sub-alert-success {
+    margin-left: 30px;
+    background-color: #B2C738;
+    padding: 10px;
+}
+
+
+
+
+/* element style (button, input, a) */
+
+a, a:hover, a:visited {
+    text-decoration: none;
+}
+
+
+
+.button-darkgreen-white,
+a.button-darkgreen-white,
+input.button-darkgreen-white,
+button.button-darkgreen-white {
+
+    background: #3F7670;
+    color: #B4C9C5;
+    font-size: 12pt;
+    border: 1px solid #3F7670;
+    padding: 5px 10px;
+}
+
+.button-white-transparent,
+a.button-white-transparent,
+input.button-white-transparent,
+button.button-white-transparent {
+
+    background: white;
+    color: #3093E4;
+    font-size: 12pt;
+    border: 1px solid rgba(255, 255, 255, 0.44);
+    padding: 5px 10px;
+}
+
+.button-white-transparent:focus,
+a.button-white-transparent:focus,
+input.button-white-transparent:focus,
+button.button-white-transparent:focus {
+
+    border: 1px solid #3093E4;
+}
+
+.button-red-white,
+a.button-red-white,
+input.button-red-white,
+button.button-red-white {
+
+    font-family: opensans-regular, serif;
+    background: red;
+    color: white;
+    font-size: 10pt;
+    border: 1px solid red;
+    padding: 5px 10px;
+}
+
+.button-red-white:hover,
+a.button-red-white:hover,
+input.button-red-white:hover,
+button.button-red-white:hover {
+
+    background: #E50D15;
+    border: 1px solid #E50D15;
+    text-decoration: none;
+}
+
+.button-green-white,
+a.button-green-white,
+input.button-green-white,
+button.button-green-white {
+
+    font-family: opensans-regular, serif;
+    background: #44A4F1;
+    color: white;
+    font-size: 10pt;
+    border: 1px solid #44A4F1;
+    padding: 5px 10px;
+}
+
+.button-green-white:hover,
+a.button-green-white:hover,
+input.button-green-white:hover,
+button.button-green-white:hover {
+
+    background: #3093E4;
+    border: 1px solid #3093E4;
+    text-decoration: none;
+}
+
+
+
+.rounded,
+input.rounded,
+button.rounded,
+a.rounded {
+
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+
+    border: 1px solid #C2C2C2;
+    padding: 5px 10px;
+}
+
+.rounded:focus,
+input.rounded:focus,
+button.rounded:focus,
+a.rounded:focus {
+    outline-offset: 0;
+    outline: none;
+}
+
+.search {
+    border: 1px solid #E8E8E8;
+}
+
+.profpic{
+    width: 35px;
+    height: 35px;
+    margin: -3px 0px;
+    border-radius: 50%;
+}
+
+.panel-primary>.panel-heading, .progress-bar-primary{
+    background: #55CCFF;
+    border-color: #55CCFF;
+}
+
+.panel-primary{
+    border-color: #55CCFF;
+}
+
+.panel-primary a{
+    color:#55CCFF;
+}
+
+.center {
+    text-align: center;
+}

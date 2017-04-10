@@ -1,0 +1,17 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# force ssl
+
+RewriteCond     %{SERVER_PORT} ^80$
+RewriteRule     ^(.*)$ https://%{SERVER_NAME}/ [L,R]
+
+# rewrite rules for front end.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# this last condition enables access to the images and css folders, and the robots.txt file
+#RewriteCond $1 !^(index\.php|public|images|robots\.txt|css)
+RewriteRule ^(.*)$ index.php/?$1 [L]
+
+</IfModule>

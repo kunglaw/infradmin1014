@@ -1,0 +1,36 @@
+
+body .container-fluid {
+    background-color: #3093E4;
+    background-size: cover;
+    font-family: opensans-regular, serif;
+}
+
+body.login-wrapper {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    color: #3093E4;
+}
+
+body.login-wrapper a,
+body.login-wrapper a:hover,
+body.login-wrapper a:visited {
+    color: #3093E4;
+}
+
+.login-wrapper .container-fluid {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*.login-wrapper .login-box {*/
+    /*margin: auto;*/
+    /*width: 35%;*/
+/*}*/
+
+.login-wrapper .input-box {
+    background-color: #ECF6FF;
+    padding: 20px;
+}
